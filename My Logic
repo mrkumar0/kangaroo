@@ -1,0 +1,25 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+  int x1,x2,v1,v2;
+  float m=0;
+  cout<<"Enter Position of kangaroo #1"<<endl;
+  cin>>x1;
+  cout<<"Enter Position of kangaroo #2"<<endl;
+  cin>>x2;
+  cout<<"Enter Jump of kangaroo #1"<<endl;
+  cin>>v1;
+  cout<<"Enter Jump of kangaroo #2"<<endl;
+  cin>>v2;
+  m=(x2-x1)/(v1-v2);
+  if( x2>=x1 && v1>=v2 && m%1==0)
+  {
+   cout<<"Kangaroos will meet after"<<m<<"Jumps";
+  }
+  else
+  {
+    cout<<"Kangaroos will not meet";
+  }
+getch();
+}
